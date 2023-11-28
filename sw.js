@@ -1,11 +1,12 @@
 // almacenamiento en cache de los elementos de JadeSprouts 
 
 const CACHE_NAME = 'PWA de JADE SPROUTS';
+navigator.serviceWorker.register('/JadeSproutsV1/sw.js', {scope: '/JadeSproutsV1/'});
 self.addEventListener('install', event =>{
     event.waitUntil((async() =>{
         const cache = await caches.open(CACHE_NAME);
         cache.addAll([
-            '/',
+            navigator.serviceWorker.register('/JadeSproutsV1/sw.js', {scope: '/JadeSproutsV1/'}),
             '/script.js',
             '/style.css',
             '/Geolocalizacion.html',
