@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - Metas
+  -->
+  <title>Jade Little Sprouts</title>
+  <meta name="title" content="Desarrollo de videojuegos">
+  <meta name="description" content="">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- 
+    - icono
+  -->
+  <link rel="shortcut icon" href="./images/logo_icono.ico" >
+
+  <!-- 
+    - Fuentes de google
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - css
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- 
+    - Imagenes de los sliders
+  -->
+  <link rel="preload" as="image" href="./images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #precarga
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Jade</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #barra superior 
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Aurora Boreal, Tepic, Nayarit, México
+        </span>
+      </address>
+
+      
+      <div class="topbar-item item-2">
+     
+
+        <span class="span"></span>
+      </div>
+
+      <a href="tel:+3112620246" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+52 3112620246</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">JadeLittleSprouts@gmail.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #Header
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./images/logo.png" width="200" height="80" alt="Jade - HomeLogo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="index.html" class="logo">
+          <img src="./images/logo.png" width="160" height="50" alt="Jade - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About</span>
+            </a>
+          </li>
+         
+          
+
+          <li class="navbar-item">
+            <a href="/Contacto.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Ven a visitarnos</p>
+
+          <address class="body-4">
+            Aurora Boreal, Tepic <br>
+            Nayarit 63037, México
+          </address>
+        </div>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Nuestros Proyectos</span>
+
+        <span class="text text-2" aria-hidden="true">Despeguemos</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <!-- 
+    - Donde estamos- Geolocalización
+  -->
+
+  <section class="section service bg-black-10 text-center" aria-label="service">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        <br>
+        <br>
+
+        <p class="section-subtitle label-2">Come find us</p>
+
+        <h2 class="headline-1 section-title">Our location</h2>
+
+        <style>
+            #map {
+                height: 400px;
+                width: 100%;
+            }
+        </style>
+
+     <body>
+    <h1></h1>
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC39jVS66CzXyQqT2rybw21A74z2Gg2Jy0&callback=initMap" async defer></script>
+    <script src="map.js"></script>
+</body>
+
+    </div>
+  </section>
+
+
+  <main>
+    <article>
+
+
+  <!-- 
+    - #Footer
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./images/logo.png" width="250" height="250" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            Aurora Boreal, Tepic, Nayarit 63037, México
+          </address>
+
+          <a href="JadeLittleSprouts@gmail.com" class="body-4 contact-link">JadeLittleSprouts@gmail.com</a>
+
+          <a href="tel:+523112620246" class="body-4 contact-link">Contact us! : +52 3112620246</a>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Stay Updated on Nuclear Harvest!   </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+     
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Projects</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Skills</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Contact us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Maps</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #boton de inicio
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - Scripts y service Worker
+  -->
+  <script src="./script.js"></script>
+
+  <script>
+    if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('/sw.js', {scope:'/'});
+    }
+  </script>
+
+
+  <!-- 
+    - ionicons
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
