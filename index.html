@@ -683,12 +683,10 @@
 
 
 
-  <!-- 
-    - Scripts y service Worker
-  -->
-  <script src="./script.js"></script>
+<!-- Scripts y service Worker -->
+<script src="./script.js"></script>
 
- <script>
+<script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/JadeSproutsV1/sw.js', { scope: '/JadeSproutsV1/' })
       .then((registration) => {
@@ -697,8 +695,8 @@
       .catch((error) => {
         console.error('Error al registrar el Service Worker:', error);
       });
-    }
-  </script>
+  }
+</script>
 
 
   <!-- 
