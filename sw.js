@@ -52,6 +52,18 @@ self.addEventListener('install', event =>{
     })());
 });
 
+// sw.js
+self.addEventListener('install', event => {
+  console.log('Service Worker instalado');
+  // ... lógica de instalación
+});
+
+self.addEventListener('activate', event => {
+  console.log('Service Worker activado');
+  // ... lógica de activación
+});
+
+
 self.addEventListener('fetch', event =>{
     event.respondWith((async() =>{
         const cache = await caches.open(CACHE_NAME);
